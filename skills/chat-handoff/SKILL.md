@@ -1,9 +1,9 @@
 ---
-name: session-handoff
-description: Session handoff. Use when the user says "save a handoff", "write a handoff", "handoff", "handover", "wrap up this chat", "save where we are", "before this chat gets compacted", "continue in a new chat", "pick up where we left off", "resume from the handoff", "read HANDOFF.md", or when a long chat or session is nearing its context limit. Saves the current state of the work (goal, decisions, verified vs assumed facts, files, open questions, exact next step) to one short HANDOFF.md that is overwritten each time, and resumes a fresh chat or session from it - so nothing is lost to compaction.
+name: chat-handoff
+description: Chat handoff. Use when the user says "save a handoff", "write a handoff", "handoff", "handover", "wrap up this chat", "save where we are", "before this chat gets compacted", "continue in a new chat", "pick up where we left off", "resume from the handoff", "read HANDOFF.md", or when a long chat or session is nearing its context limit. Saves the current state of the work (goal, decisions, verified vs assumed facts, files, open questions, exact next step) to one short HANDOFF.md that is overwritten each time, and resumes a fresh chat or session from it - so nothing is lost to compaction.
 ---
 
-# Session Handoff
+# Chat Handoff
 
 Long chats get compacted, and compaction loses the details that matter: decisions, file names, where you left off.
 The fix is not to race compaction. Hand off at a natural stopping point, start fresh, and resume from one short file.

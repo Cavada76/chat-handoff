@@ -1,4 +1,4 @@
-# Privacy Policy – session-handoff
+# Privacy Policy – chat-handoff
 
 _Last updated: 2026-10-04_
 
@@ -14,4 +14,4 @@ This plugin is a set of instructions for Claude plus two small local shell scrip
 
 **Claude itself:** your conversation and the files you share with Claude are handled by Anthropic under its own privacy policy: https://www.anthropic.com/legal/privacy
 
-**Contact:** open an issue at https://github.com/Cavada76/session-handoff/issues
+**Contact:** open an issue at https://github.com/Cavada76/chat-handoff/issues

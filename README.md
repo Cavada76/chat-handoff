@@ -1,4 +1,4 @@
-# Session Handoff for Claude
+# Chat Handoff for Claude
 
 Long chats get compacted, and every time it happens you lose detail: decisions you made, file names, where you left off.
 You can't reliably catch the moment right before compaction, and rewriting a handoff after every message burns tokens.
@@ -15,19 +15,19 @@ and Claude reads it, restates where you are in three lines, and checks the assum
 
 ## Install
 
-**Claude.ai / Claude desktop app (chat):** download `session-handoff-skill.zip` from Releases, then Settings → Capabilities → Skills → Upload. Works in a plain chat, in Projects, and with a connected folder.
+**Claude.ai / Claude desktop app (chat):** download `chat-handoff-skill.zip` from Releases, then Settings → Capabilities → Skills → Upload. Works in a plain chat, in Projects, and with a connected folder.
 
 **Claude Code**
 ```
-/plugin marketplace add Cavada76/session-handoff
-/plugin install session-handoff@session-handoff
+/plugin marketplace add Cavada76/chat-handoff
+/plugin install chat-handoff@chat-handoff
 ```
 
 ## What you get in Claude Code
 
 The skill, plus two small hooks (bash, no dependencies):
 
-- **Early warning.** When the session's context passes 120k tokens, you see a one-line notice, and Claude offers a handoff at the next natural stopping point, not mid-task. It warns again every 50k tokens. Change this with `SESSION_HANDOFF_TOKENS` and `SESSION_HANDOFF_STEP`.
+- **Early warning.** When the session's context passes 120k tokens, you see a one-line notice, and Claude offers a handoff at the next natural stopping point, not mid-task. It warns again every 50k tokens. Change this with `CHAT_HANDOFF_THRESHOLD` and `CHAT_HANDOFF_STEP`.
 - **Recovery after compaction.** If compaction happens anyway, Claude is told to re-read `HANDOFF.md` before continuing.
 - **Resume without naming the file.** When a session starts in a folder with a `HANDOFF.md`, Claude knows it's there, so "where were we?" just works.
 
