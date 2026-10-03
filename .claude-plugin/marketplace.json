@@ -1,0 +1,15 @@
+{
+  "name": "session-handoff",
+  "owner": { "name": "Daniel" },
+  "metadata": { "description": "Save a short HANDOFF.md before a chat gets compacted, and resume in a fresh session.", "version": "1.0.0" },
+  "plugins": [
+    {
+      "name": "session-handoff",
+      "source": "./",
+      "description": "Save a short HANDOFF.md before a chat gets compacted, and resume in a fresh session.",
+      "version": "1.0.0",
+      "category": "productivity",
+      "keywords": ["handoff", "compaction", "context window", "resume"]
+    }
+  ]
+}

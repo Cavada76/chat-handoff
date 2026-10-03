@@ -1,0 +1,11 @@
+{
+  "name": "session-handoff",
+  "version": "1.0.0",
+  "description": "Session handoff: save where you are to one short HANDOFF.md before a long chat gets compacted, then resume in a fresh chat or session. Warns when the context gets large and recovers after compaction.",
+  "author": { "name": "Daniel" },
+  "license": "MIT",
+  "homepage": "https://github.com/Cavada76/session-handoff",
+  "repository": "https://github.com/Cavada76/session-handoff",
+  "privacyPolicyUrl": "https://github.com/Cavada76/session-handoff/blob/main/PRIVACY.md",
+  "keywords": ["handoff", "handover", "compaction", "context window", "context limit", "session notes", "continue chat", "resume", "memory"]
+}
